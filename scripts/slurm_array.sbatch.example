@@ -1,0 +1,19 @@
+#!/bin/bash
+# Example SLURM array: one task per line of a job list made by scripts/make_jobs.py. All jobs use CPUs only.
+#   python scripts/make_jobs.py -o jobs.txt
+#   mkdir -p logs && sbatch --array=1-$(wc -l < jobs.txt)%50 scripts/slurm_array.sbatch.example jobs.txt
+# Adapt the partition, the time limit and the environment activation to your cluster.
+# The paper's runs used 4 threads per job; recorded peak memory was up to 36 GB on the larger datasets (see README, "Compute").
+#SBATCH --job-name=evodur
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=40G
+#SBATCH --time=12:00:00
+#SBATCH --output=logs/%x_%A_%a.out
+
+set -euo pipefail
+# source .venv/bin/activate        # or: module load ...; conda activate evodur
+export PYTHONPATH="${SLURM_SUBMIT_DIR:-$PWD}${PYTHONPATH:+:$PYTHONPATH}"
+JOBS=${1:-jobs.txt}
+CMD=$(sed -n "${SLURM_ARRAY_TASK_ID}p" "$JOBS")
+echo "$CMD"
+eval "$CMD"

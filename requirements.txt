@@ -1,0 +1,14 @@
+# Versions used for the results in the paper (Python 3.10.14, CPU only).
+# Install the CPU build of PyTorch first:  pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+scikit-survival==0.25.0
+lifelines==0.30.0
+xgboost==3.2.0
+torch==2.14.1
+matplotlib==3.10.9
+openpyxl==3.1.5
+joblib==1.6.0
+threadpoolctl==3.7.0

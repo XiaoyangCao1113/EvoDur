@@ -1,0 +1,114 @@
+{
+ "_files": {
+  "external/weather/noaa_isd_54511_2008.csv": "118c12205f632be55cf6ae33296e39df917e7c57e14a11654ea6178375bf7485",
+  "public/sf_cad/sf_traffic_accidents.csv": "08eadcd523ba53db443a74d815958532b5d99c6835b5551b11180b2e78615696",
+  "public/sydney_rti/extracted/Excel Files/Final Road Traffic Incidents.xlsx": "6a1ee43c1e99c9194a0cc1c228e464394235d15644bbc89413a909db90a808cb"
+ },
+ "_raw_rows": {
+  "ny511early (accident events created 2010-2015)": 225731,
+  "sanfrancisco (rows, pinned window)": 90437,
+  "seattle (events, pinned window, one row per event)": 267982
+ },
+ "_windows": {
+  "ny511early": [
+   "2010-01-01",
+   "2015-12-31"
+  ],
+  "sanfrancisco": [
+   "2014-12-31 23:18:13",
+   "2026-10-26 23:33:34"
+  ],
+  "seattle": [
+   "2009-06-02 03:54:42",
+   "2026-10-23 23:33:47"
+  ],
+  "sydney": "Mendeley Data cgnx2cs665 version 5"
+ },
+ "citywide": {
+  "class_counts": [
+   6676,
+   17141,
+   1261,
+   15042
+  ],
+  "content_hash": "07af52b199892f5b2d530da18fba0d6151c5cae95b30553b4788909db57d1cf8",
+  "first_call": "2008-01-01 00:04:31",
+  "last_call": "2008-12-20 21:47:05",
+  "median_minutes": 28.283,
+  "n": 40120,
+  "order_hash": "a7698ec920b3c203d49c9f685327607edcbe2ed0ba18cf93558790cda00564f1"
+ },
+ "ny511early": {
+  "class_counts": [
+   175974,
+   16482,
+   9905,
+   3648
+  ],
+  "content_hash": "1326826798cbc71029258ed82b03eeefe0bae555f63d82d1672ee91371c6e21a",
+  "first_call": "2010-01-01 01:01:31",
+  "last_call": "2015-12-31 12:37:00",
+  "median_minutes": 43.0,
+  "n": 206009,
+  "order_hash": "2cce87e6ffaf86ddc127387796863beb1d2bf28395ecc41e390a7a580a3d87ae"
+ },
+ "ring4": {
+  "class_counts": [
+   1104,
+   2160,
+   74,
+   2050
+  ],
+  "content_hash": "828be2f3384eef266b630305858e653083ac74dafe76ea18b07597d008149ede",
+  "first_call": "2008-01-01 11:19:27",
+  "last_call": "2008-12-20 18:14:02",
+  "median_minutes": 21.5,
+  "n": 5388,
+  "order_hash": "828be2f3384eef266b630305858e653083ac74dafe76ea18b07597d008149ede"
+ },
+ "sanfrancisco": {
+  "class_counts": [
+   36313,
+   29905,
+   15623,
+   2999,
+   3346
+  ],
+  "content_hash": "7ebd1f90628127aeffc85d19ef8b3d5f8d969b33a11f51de570ec2427c227d3e",
+  "first_call": "2014-12-31 23:18:13",
+  "last_call": "2026-10-26 23:33:34",
+  "median_minutes": 63.45,
+  "n": 88186,
+  "order_hash": "8bbbeb9730bbf74b99743f9ad7a93745fa21c7f255bdeface717d5022d715441"
+ },
+ "seattle": {
+  "class_counts": [
+   170144,
+   9685,
+   46992,
+   21648,
+   5289
+  ],
+  "content_hash": "3836221b55d915ae887e54d8decda73952db8a6521f5e392809ae540ac58b7d8",
+  "first_call": "2010-01-01 00:03:27",
+  "last_call": "2026-10-23 23:33:47",
+  "median_minutes": 126.65,
+  "n": 253758,
+  "order_hash": "cb46d64a55d1a04278183970ca75bf341f6a3e4492b21bb2ec104cc67996ad21"
+ },
+ "sydney": {
+  "class_counts": [
+   10304,
+   14068,
+   4017,
+   3748,
+   6470
+  ],
+  "content_hash": "68fa0f3841fbd6905db6a0f918c1c37c8736ddf63129a79251ea4cabf131bc7f",
+  "first_call": "2017-01-01 07:06:00",
+  "last_call": "2022-07-27 15:41:00",
+  "median_minutes": 33.284,
+  "n": 38607,
+  "order_hash": "59cc4c12767769212cc803f409bc69df1f139019cf0d5d3b9f8d9328382f947c"
+ }
+}

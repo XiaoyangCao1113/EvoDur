@@ -1,0 +1,17 @@
+\begin{tabular}{p{2.5cm}p{3.6cm}p{3.5cm}p{2.5cm}p{2.3cm}p{2.3cm}}
+\toprule
+Study & Data & Information used & Output & Metric & Refitted per stage \\
+\midrule
+\citet{Li2015AAP} & Singapore expressways, 2010--2011 & Single stage; clearance method treated as an uncertain mixture class & Mixture distribution & MAPE & Not applicable \\
+\citet{Li2015TRC} & Singapore expressways, 2010--2011 (12,093 incidents) & Sequential: topics from incident-log messages as they arrive & Mixture distribution & Not stated & Not stated \\
+\citet{Pereira_2013} & Singapore expressways, 2010--2011 (two years of accident cases) & Structured fields and free text; stages not stated & Not stated & Not stated (28\% error reduction from text) & Not stated \\
+\citet{Grigorev2022TRC} & Sydney arterial and motorway (2017); San Francisco (period not stated) & Two stages: short/long classifier, then regression; attributes logged with the incident & Class (short/long) and point (min) & F1; MAPE & No (separate models for short and long incidents) \\
+\citet{Kalair_2021} & London M25 clockwise, Sep 2017--Sep 2018 & Incident attributes and minute-by-minute traffic state; elapsed time via landmarks and a sliding window & Distribution; point (median) & C-index; Brier score; MAPE & Landmark models: yes; sliding-window network: no \\
+\citet{Li_2020} & East Tennessee, 2015--2016 (over 600 large-scale incidents) & Five sequential stages as agencies and actions are recorded & Point (min) & RMSE; MAPE & Not stated \\
+\citet{Abdi2023_new} & Location and period not stated & Two stages: real-time traffic and weather at the call, then responder arrival & Point (min); class (traffic level) & MAPE; accuracy & Yes (second model after arrival) \\
+\citet{Zou2023DeepSurv} & Freeway incidents; location and period not stated & Single model; includes response time and lane-closure type & Survival regression & Not stated & Not applicable \\
+\citet{Kim2024MTDNN} & Korean freeways, 2014--2019 & Single model with duration dependence on elapsed time & Point (min) and survival function & MAPE & No (one multi-task network) \\
+\midrule
+This paper & Beijing (4th Ring, citywide), NY/NJ/CT 511, Sydney, Seattle, San Francisco & Call; responder arrival; response label; elapsed time & Full distribution & Log score; interval score; IBS; C-index; MAE; coverage & No (one prior, evidence updates by Bayes' rule) \\
+\bottomrule
+\end{tabular}

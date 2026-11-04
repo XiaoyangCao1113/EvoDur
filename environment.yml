@@ -1,0 +1,21 @@
+name: evodur
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=2.2.6
+  - pandas=2.3.3
+  - scipy=1.15.3
+  - scikit-learn=1.7.2
+  - scikit-survival=0.25.0
+  - lifelines=0.30.0
+  - xgboost=3.2.0
+  - openpyxl=3.1.5
+  - matplotlib=3.10.9
+  - pytest>=7.0
+  - pip:
+      # CPU build of PyTorch; all experiments run on CPU
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==2.14.1
+      - -e .

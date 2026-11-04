@@ -1,0 +1,15 @@
+This repository includes third-party material under the following licences.
+
+1. Neural Fine-Gray
+   File:      evodur/third_party/nfg_torch.py (unmodified copy of nfg/nfg_torch.py)
+   Source:    https://github.com/Jeanselme/NeuralFineGray, commit recorded in evodur/third_party/NFG_COMMIT.txt
+   Reference: V. Jeanselme, C. H. Yoon, B. Tom, J. Barrett. Neural Fine-Gray: Monotonic neural networks for
+              competing risks. Conference on Health, Inference, and Learning (CHIL), 2023.
+   Licence:   MIT License, Copyright (c) 2021 Vincent Jeanselme.
+              Full text: evodur/third_party/LICENSE_NeuralFineGray
+
+2. Material Design Icons
+   Files:     evodur/figures/icons/*.svg (used in the teaser figure)
+   Source:    @mdi/svg 7.4.47, Pictogrammers, https://pictogrammers.com
+   Licence:   Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+              Licence statement of the collection: evodur/figures/icons/LICENSE_MaterialDesignIcons
